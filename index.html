@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/source/img/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de Registro</title>
+  
+</head>
+<body>
+<form action="index.html" id="formulario" name="rellenar">
+    <div>
+    <h1>Registrar producto</h1>
+    <input id="codigo" name="codigo" class="registrar primero" type="text" placeholder="Codigo_Producto" required>
+    <input id="nombre" name="nombre" class="registrar" type="text" placeholder="Nombre_Producto" required>
+    <input id="precio" name="precio" class="registrar" type="text" placeholder="Precio_Unitario" required>
+    <input id="cantidad" class="registrar" type="text" placeholder="Cantidad_Productos" required>
+    <input id="tipo" class="registrar" type="text" placeholder="Tipo_Producto" required>
+    <p class="terminos m s"><input type="radio" name="Empanada" id="Empanada" value="Empanada" required>Empanadaa</p> 
+    <p class="terminos m"><input type="radio" name="Arepaa" id="Arepa" value="Arepa" required>Arepaa</p> 
+    <p class="terminos m"><input type="radio" name="Hamburguesaa" id="Hamburguesa" value="Hamburguesa"required >Hamburguesaa</p> 
+    <p class="terminos"><input type="checkbox" name="terminosy" id="terminosy" value="aceptados" onclick="" required>Acepta Terminos y Condiciones </p>
+    <input name="ver" id="ver" class="enviar" type="button" value="ver" onclick="mostrar()">
+</div>
+
+<div class="resultado">
+    <h1>Resultados</h1>
+
+    <p id="caja"></p>
+</div>
+</form>
+
+<script src="js.js"></script>
+</body>
+</html>
